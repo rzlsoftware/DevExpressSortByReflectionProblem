@@ -1,7 +1,6 @@
 # DevExpressSortByReflectionProblem
 
-A sampel application to describe a reflection problem when using DevExpress `DataGrid Virtual Sources` with sorting by an inherited property.
-Description can be found in [MainViewModel](https://github.com/rzlsoftware/DevExpressSortByReflectionProblem/blob/912953eafd52ba1a36183a00df1b88ab812eeb48/DevExpressSortByReflectionProblem/ViewModels/MainViewModel.cs#L40) constructor.
+A sample application that [DevExpress Issue](https://www.devexpress.com/Support/Center/Question/Details/T715393/datagrid-virtual-sources-sortby-reflection-problem) when using DevExpress `DataGrid Virtual Sources` with sorting by an inherited property.
 
 The problem is in the `Devexpress.Xpf.Data.ExpressionHelper.GetProperty<T>(string propertyName)` method.
 ```csharp
@@ -25,3 +24,5 @@ public static PropertyInfo GetProperty<T>(string propertyName)
     return propertyInfo;
 }
 ```
+
+More details can be found in [MainViewModel](https://github.com/rzlsoftware/DevExpressSortByReflectionProblem/blob/912953eafd52ba1a36183a00df1b88ab812eeb48/DevExpressSortByReflectionProblem/ViewModels/MainViewModel.cs#L40) constructor.
