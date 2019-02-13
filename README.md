@@ -1,6 +1,6 @@
 # DevExpressSortByReflectionProblem
 
-A sample application to describe a reflection problem when using DevExpress `DataGrid Virtual Sources` with sorting by an inherited property.
+A sample application that [DevExpress Issue](https://www.devexpress.com/Support/Center/Question/Details/T715393/datagrid-virtual-sources-sortby-reflection-problem) when using DevExpress `DataGrid Virtual Sources` with sorting by an inherited property.
 
 The problem is in the `Devexpress.Xpf.Data.ExpressionHelper.GetProperty<T>(string propertyName)` method.
 ```csharp
