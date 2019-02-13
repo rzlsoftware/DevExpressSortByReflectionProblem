@@ -1,0 +1,21 @@
+﻿<Window x:Class="DevExpressSortByReflectionProblem.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DevExpressSortByReflectionProblem"
+        xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800"
+        DataContext="{Binding Source={StaticResource Locator}, Path=MainViewModel}">
+    <Grid>
+        <dxg:GridControl Margin="50" ItemsSource="{Binding BookInfiniteAsyncSource}">
+            <dxg:GridColumn Header="Lastname" FieldName="Lastname" SortOrder="Ascending" />
+            <dxg:GridColumn Header="Firstname" FieldName="Firstname" />
+            <dxg:GridColumn Header="Title" FieldName="Title" />
+            <dxg:GridColumn Header="ISBN" FieldName="Isbn" />
+            <dxg:GridColumn Header="Email" FieldName="Email" />
+            <dxg:GridColumn Header="Description" FieldName="Description" />
+        </dxg:GridControl>
+    </Grid>
+</Window>
